@@ -1,3 +1,4 @@
-```js
+In Firefox or Chrome, create a new bookmark
+Add the following code as the URL, and it creates a search box bookmarklet to google search github
+
 javascript:q = "" + (window.getSelection ? window.getSelection() : document.getSelection ? document.getSelection() : document.selection.createRange().text); if (!q) q = prompt("You didn't select any text. %C2%A0Enter a search phrase:", ""); if (q!=null) location=("http://www.google.com/search?num=100&q=site:github.com"%C2%A0+ " " + escape(q.replace(/\"/g,"")) + "").replace(/ /g, "+"); void 0``
-```
